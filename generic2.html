@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>傳說對決 Arena of Valor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style type = "text/css">
+		#block1 { width: 500px;
+					height:500px;
+			       border: 1px solid #999999;
+				   border-collapse: collapse 
+				   }
+		body{
+			text-align: center;
+				}
+
+		table1{
+			width:60%;
+			margin:auto;
+			font-size:1.5em;
+				}
+		td{
+			border-bottom:2px solid blue; 
+			}
+
+		th {
+		  background-color: skyblue;
+		  color: white;
+			}	   
+		
+		</style>
+		 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src = "topic.js"></script>
+		<script>
+		$(document).ready(function(){
+		var topicCount = topic.length;
+		var sec = 1000;
+		var min = sec * 60;
+		var hr = min * 60;
+		var day = hr * 24;
+		
+		for(var x = 0; x <topicCount; x++)
+		{   
+			
+			$("#courseTable").append("<tr><th></th><th>時間</th><th>隊伍</th></tr><tr><td>" + (x+1) + "</td><td>" + 
+			   (new Date (startDate.getTime()+x*7*day)).toLocaleDateString().slice(5) + "</td><td>" + topic[x] + "</td></tr>");
+			
+		}
+	});
+	</script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">傳說對決 Arena of Valor</a></div>
+				<a href="#menu"><span>首頁</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">首頁</a></li>
+					<li><a href="generic.html">About Me</a></li>
+					<li><a href="generic0.html">1. 英雄喜好測驗</a></li>
+					<li><a href="generic1.html">2. 隨機角色</a></li>
+					<li><a href="generic2.html">3. 校際賽事</a></li>
+					<li><a href="generic3.html">4. 精彩回顧</a></li>
+					<li><a href="generic4.html">5. RPG</a></li>
+				</ul>
+			</nav>
+
+		<!-- Content -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+			<section id="post" class="wrapper bg-img" data-bg="banner3.jpg">
+				
+					<article class="box">
+						<h2>校際賽事</h2>
+						<table id ="courseTable"></table>
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

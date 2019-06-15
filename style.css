@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+   
+    //color:gray;
+}
+
+table1{
+    width:60%;
+    margin:auto;
+    font-size:1.5em;
+}
+td1{
+    border-bottom:2px solid blue; 
+}
+
+th1 {
+  background-color: skyblue;
+  color: white;
+}
+
+
+
+/*
+td1{
+    border-bottom:2px solid blue;
+    color:gray;
+}*/
